@@ -1,0 +1,75 @@
+﻿@model IEnumerable<Mvc.Models.PayRollModel>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.EmployeeId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TotalWorkHours)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.HourlyRate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Deductions)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NetPay)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Month)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Status)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DateCompiled)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.EmployeeId)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TotalWorkHours)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.HourlyRate)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Deductions)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NetPay)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Month)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Status)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DateCompiled)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+            @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+            @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+        </td>
+    </tr>
+}
+
+</table>

@@ -1,0 +1,90 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+    background-color: #b6ff00;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 340px;
+}
+
+/*styles for validation helpers */
+.field-validation-error {
+    color: #00ff21;
+    font-size: 18px;
+}
+.field-validation-valid {
+    display: none;
+}
+input.input-validation-error {
+    border: 1px solid #ff6a00;
+}
+input[type="checkbox"].input-validation-error {
+    border: 0 none;
+}
+.validation-summary-errors {
+    color: #ff0000;
+}
+.validation-summary-valid {
+    display: none;
+}
+
+input, textarea {
+    display: block;
+    height: 100%;
+    padding: 5px 10px;
+    background: none;
+    border: 1px solid #ff6a00;
+    color: #fff;
+    border-radius: 0;
+    transition: border-color .25s ease, box-shadow .25s ease;
+}
+.button{
+    border: 1px solid #fff;
+    outline: none;
+    border-radius: 0;
+    padding: 10px 10px;
+    font-weight: 400;
+    background: #b200ff;
+    color: #fff;
+    -webkit-appearance: none;
+}
+    .button:hover, .button:focus {
+        color: #fff !important;
+    }
+.form-body {
+    padding: 20px 40px;
+    max-width: 600px;
+    margin: 30px auto;
+    background: #ff6a00;
+    box-shadow: 0 4px 10px 4px rgb(128, 128, 128);
+}
+
+body {
+    background-image: url("images/WIN_20171117_08_05_27_Pro.jpg");
+}
+label {
+    color: #fff;
+    font-size: 22px;
+}
+.form-body input, textarea {
+    font-size: 20px;
+}
+    textarea::after focus, input:focus {
+        outline: none;
+    }
+    .table-heading {
+        background-color: #b6ff00;
+        color: #fff;
+    }
+    .add-new {
+        background-color : #ff6a00;
+    }

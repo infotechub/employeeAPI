@@ -1,0 +1,33 @@
+﻿@model Mvc.Models.ProfileModel
+@{
+    ViewBag.Title = "AddOrEdit";
+}
+
+<div class="form-body">
+    @using (Html.BeginForm())
+    {
+        @Html.HiddenFor(model => model.EmployeeId)
+
+        <div class="form-body">
+            @Html.LabelFor(model => model.FirstName)
+            @Html.EditorFor(model => model.FirstName)
+            @Html.ValidationMessageFor(model => model.FirstName)
+        </div>
+        <div class="form-body">
+            @Html.LabelFor(model => model.FirstName)
+            @Html.EditorFor(model => model.FirstName)
+            @Html.ValidationMessageFor(model => model.FirstName)
+        </div>
+        <div class="form-body">
+            @Html.LabelFor(model => model.FirstName)
+            @Html.EditorFor(model => model.FirstName)
+            @Html.ValidationMessageFor(model => model.FirstName)
+        </div>
+        <div class="form-body">
+            @Html.LabelFor(model => model.FirstName)
+            @Html.EditorFor(model => model.FirstName)
+            @Html.ValidationMessageFor(model => model.FirstName)
+        </div>
+    }
+</div>
+
